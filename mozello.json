@@ -1,0 +1,44 @@
+{
+    "app_type": "PAYMENT_GATEWAY",
+    "app_title": "Zenopay Mobile Money Tanzania",
+    "app_vendor": {
+        "company_name": "Zenopay",
+        "support_email": "support@zenoapi.com",
+        "support_phone": "+255 XXX XXX XXX",
+        "developer_email": "dev@zenoapi.com"
+    },
+    "payment_api_url": "https://your-server.com/mozello/zenopay/process",
+    "payment_api_data_fields": [
+        {
+            "id": "merchant_api_key",
+            "title": {
+                "en": "Your Zenopay API Key",
+                "sw": "Zenopay API Key yako"
+            },
+            "type": "text",
+            "required": true
+        },
+        {
+            "id": "sandbox_mode",
+            "title": {
+                "en": "Test Mode",
+                "sw": "Hali ya jaribio"
+            },
+            "type": "checkbox",
+            "required": false
+        }
+    ],
+    "payment_platform_info": {
+        "available_in_countries": ["TZ"],
+        "supported_payment_methods": {
+            "visa": false,
+            "mc": false,
+            "amex": false,
+            "mobile_money": true
+        },
+        "info_url": {
+            "en": "https://zenoapi.com/integrations/mozello",
+            "sw": "https://zenoapi.com/sw/integrations/mozello"
+        }
+    }
+}
